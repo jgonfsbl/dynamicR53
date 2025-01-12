@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dynamicR53"
+version = "0.1.0"
+description = "A script for dynamic DNS using AWS Route53"
+authors = ["Jonathan González <jgonf@safebytelabs.com>"]
+license = "MPL 2.0"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.97"
+botocore = "^1.35.97"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+mypy = "^1.14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
