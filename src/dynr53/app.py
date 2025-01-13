@@ -5,7 +5,7 @@
 
 """Dynamic Route 53 Updater"""
 
-__updated__ = "2025-01-12 23:39:05"
+__updated__ = "2025-01-13 02:51:22"
 
 
 import boto3
@@ -58,7 +58,7 @@ HOSTED_ZONE_ID = Config.HOSTED_ZONE_ID
 RECORD_NAME = Config.RECORD_NAME
 #
 # Time to Live in seconds
-TTL = Config.TTL
+TTL = int(Config.TTL)
 #
 # ================================================================ 
 
